@@ -1,0 +1,26 @@
+.circulos-horizontales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.circulos-horizontales div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  font-size:25px;
+  color: black; /* Color del número */
+}
+
+.circulos-horizontales .marcado {
+  background-color: red; /* Color de fondo cuando se marca */
+  color: white; /* Color del número cuando se marca */
+}
+#resultado {
+  font-size: 38px; /* Tamaño de la fuente aumentado */
+

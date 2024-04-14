@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<center>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BORIS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h1> BINGO </h1>
+      <h3>Haz clic en el botón de abajo para generar un número aleatorio entre 1 y 90 o activa la casilla para generación automática cada 4 segundos:</h3>
+      <div id="randomBox"><h5>Automático</h5>
+
+        <button onclick="generarNumeroAleatorio()"><h5>Generar</h5></button>
+        <label class="switch">
+         <input type="checkbox" id="autoGenerate" onclick="toggleAutoGenerate()">
+          <span class="slider round"></span>        </label>
+        <button onclick="detenerGeneracionAutomatica()"><h5>Detener</h5></button>
+      </div>
+</div>
+</div>
+      <h2 id="resultado"></h2>
+      <div id="numerosContainer">
+        <p></p>
+        <div id="numeros" class="circulos-horizontales">
+          <!-- Los números del 1 al 90 se generarán aquí automáticamente mediante JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
