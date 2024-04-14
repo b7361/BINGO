@@ -1,26 +1,35 @@
-.circulos-horizontales {
+
+#numerosContainer {
+  margin-top: 30px;
+}
+
+#numeros {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
-.circulos-horizontales div {
+.numero {
   width: 35px;
   height: 35px;
+  border: 1px solid #ccc;
   border-radius: 50%;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 5px;
-  font-size:25px;
-  color: black; /* Color del número */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
 }
 
-.circulos-horizontales .marcado {
-  background-color: red; /* Color de fondo cuando se marca */
-  color: white; /* Color del número cuando se marca */
+.numero.clicked {
+  background-color: red;
+  color: white;
 }
+
+
 #resultado {
-  font-size: 38px; /* Tamaño de la fuente aumentado */
+  font-size: 45px; /* Tamaño de fuente más grande */
+  margin-top: 20px; /* Espacio entre el botón y el número */
+}/* Estilos anteriores se mantienen */
+
 
