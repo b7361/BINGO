@@ -1,9 +1,15 @@
 var autoGenerateInterval;
 var numerosGenerados = [];
+var totalNumeros = 90; // Número total de números a generar
 
 function generarNumeroAleatorio() {
   var min = 1; // Valor mínimo
   var max = 90; // Valor máximo
+
+  if (numerosGenerados.length >= totalNumeros) {
+    detenerGeneracionAutomatica(); // Detener la generación automática si se han generado todos los números
+    return;
+  }
 
   var numeroAleatorio;
   do {
@@ -55,7 +61,7 @@ function initNumeros() {
     var numero = document.createElement("div");
     numero.innerText = i;
     numero.classList.add("numero");
-    numero.onclic = function() {
+    numero.onclick = function() {
       var num = parseInt(this.innerText);
       document.getElementById('resultado').innerText = "Número aleatorio: " + num;
       var numeros = document.getElementsByClassName("numero");
